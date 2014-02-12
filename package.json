@@ -1,6 +1,6 @@
 {
   "name": "list-assets",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/list-assets.js",
   "description": "Scans HTML and CSS for local resource paths",
   "homepage": "https://github.com/callumlocke/list-assets",
@@ -28,6 +28,7 @@
     "test": "mocha"
   },
   "dependencies": {
-    "css-parse": "~1.7.0"
+    "css-parse": "~1.7.0",
+    "soup": "~0.1.3"
   }
 }
