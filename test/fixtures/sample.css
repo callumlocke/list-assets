@@ -1,0 +1,52 @@
+.empty { }
+
+.something {
+  background: url('../images/foo.png');
+  background: url('../images/bar.png?12345');
+  background: url(../images/foo.png) ;
+  background: url ( ../images/bar.png  );
+  background: url(  
+    ../images/bar.png
+       )
+}
+
+.another-thing {
+  background: url(more-images/bar.jpg?12345);
+  background: url( more-images/bar.jpg?12345 );
+  background: url( 'more-images/bar.jpg' );
+  background: url(
+    more-images/bar.jpg   
+  );
+  background  : url(images/thing.jpg)  ;
+  background: url(data:asdfasdf);
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  
+  /* without hack */
+  behavior: url(scripts/boxsizing1.htc);
+  behavior  : url(  scripts/boxsizing2.htc  );
+  
+  /* with IE<8 hack */
+  *behavior: url(scripts/boxsizing3.htc);
+}
+
+.thing {
+  background: url('cat.jpg');
+}
+
+
+@font-face {
+  font-family: 'coool';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/coool.woff) format('woff');
+     src:  url("fonts/coool.eot?#iefix") format("embedded-opentype"),  url("fonts/coool.woff") format("woff"),url("fonts/coool.ttf") format("truetype"),
+    url("fonts/coool.svg#coool") format("svg")  ;
+}
+
+
+.data {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==);
+}

@@ -1,0 +1,33 @@
+{
+  "name": "list-assets",
+  "version": "0.0.1",
+  "main": "lib/list-assets.js",
+  "description": "Scans HTML and CSS for local resource paths",
+  "homepage": "https://github.com/callumlocke/list-assets",
+  "bugs": "https://github.com/callumlocke/list-assets/issues",
+  "author": {
+    "name": "Callum Locke",
+    "homepage": "https://github.com/callumlocke"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/callumlocke/list-assets"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "keywords": [],
+  "devDependencies": {
+    "chai": "~1.9.0",
+    "mocha": "~1.17.1",
+    "lodash": "~2.4.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "css-parse": "~1.7.0"
+  }
+}
